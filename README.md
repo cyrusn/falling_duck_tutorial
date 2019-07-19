@@ -1,10 +1,4 @@
-  # Falling Duck
-
-### ~button /#tutorial:/tutorials/falling-duck
-
-Try this tutorial!
-
-### ~
+ # Falling Duck Tutorial
 
 ## 簡介 @unplugged
 
@@ -12,7 +6,7 @@ Try this tutorial!
 
 今日本校會為你帶黎一個難忘既早上，希望透過今日的工作坊，讓你學懂一些簡單既編程。
 
-![duck](/static/tutorials/falling-duck/duck.gif)
+![duck](/static/blocks-games.gif)
 
 ## 步驟 1 @fullscreen
 
@@ -275,23 +269,23 @@ function createLogImage () {
 function moveLogImage () {
     // @highlight
     let projectile = sprites.createProjectileFromSide(img`
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-`, 50, 100)
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+    `, 50, 100)
 }
 ```
 
@@ -645,4 +639,4 @@ game.onUpdate(function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
     game.over(false)
 })
-```
+``` 

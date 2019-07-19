@@ -1,5 +1,5 @@
 {
-    "name": "falling duck",
+    "name": "Falling Duck Tutorial",
     "dependencies": {
         "device": "*"
     },
@@ -9,5 +9,5 @@
         "main.ts",
         "README.md"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
