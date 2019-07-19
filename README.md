@@ -210,10 +210,12 @@ controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
 
 ## 步驟 9 @fullscreen
 
-打開 ``|Advanced|`` 選單，在 ``||Functions:Functions||`` 選單中，按 `make a function` 將 `function` 的名稱改為 `createLogImage` 。這樣我們便可以建立 ``||Functions:function||``
+打開 ``||Advanced||`` 選單，在 ``||functions:Functions||`` 選單中，按 `make a function` 將 `function` 的名稱改為 `createLogImage` 。這樣我們便可以建立 ``||Functions:function||``
 
 ```blocks
-function createLogImage () {}
+function createLogImage () {
+    return null
+}
 ```
 
 ## 步驟 10 @fullscreen
