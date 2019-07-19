@@ -1,12 +1,20 @@
- # Falling Duck Tutorial
+# Falling Duck Tutorial
+
+### ~button https://arcade.makecode.com/#tutorial:https://github.com/cyrusn/flappy_duck_tutorial
+
+Try this tutorial!
+
+### ~
 
 ## 簡介 @unplugged
 
 迎歡來到聖公會李炳中學的電腦教室
 
-今日本校會為你帶黎一個難忘既早上，希望透過今日的工作坊，讓你學懂一些簡單既編程。
+今日我們會教你編寫一個簡單的遊戲，希望當中能讓你學懂簡單的編程概念。
 
-![duck](/static/blocks-games.gif)
+``||functions:letGetStart||``
+
+![duck](https://arcade.makecode.com/static/blocks-games.gif)
 
 ## 步驟 1 @fullscreen
 
@@ -34,7 +42,6 @@ mySprite = sprites.create(img`
     . . . c c c c c c c c b b . . .
     . . . . . . . . . . . . . . . .
 `, SpriteKind.Player)
-
 ```
 
 ## 步驟 2 @fullscreen
@@ -199,7 +206,7 @@ controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
 ```blocks
 let mySprite: Sprite = null
 controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
-        // @highlight
+    // @highlight
     mySprite.vy = -100
 })
 ```
@@ -210,11 +217,12 @@ controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
 
 ## 步驟 9 @fullscreen
 
-打開 ``||Advanced||`` 選單，在 ``||functions:Functions||`` 選單中，按 `make a function` 將 `function` 的名稱改為 `createLogImage` 。這樣我們便可以建立 ``||Functions:function||``
+打開 ``|Advanced|`` 選單，在 ``||functions:Functions||`` 選單中，按 `make a function` 將 `function` 的名稱改為 `createLogImage` 。這樣我們便可以建立 ``||functions:function||``
 
 ```blocks
+// @highlight
+
 function createLogImage () {
-    return null
 }
 ```
 
