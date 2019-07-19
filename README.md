@@ -14,6 +14,10 @@ Try this tutorial!
 
 ``||functions:letGetStart||``
 
+```blocks
+function letGetStart() {}
+```
+
 ![duck](https://arcade.makecode.com/static/blocks-games.gif)
 
 ## 步驟 1 @fullscreen
