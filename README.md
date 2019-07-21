@@ -12,6 +12,7 @@ Try this tutorial!
 
 今日我們會教你編寫一個簡單的遊戲，希望當中能讓你學懂簡單的編程概念。
 
+
 ![duck](https://arcade.makecode.com/static/blocks-games.gif)
 
 ## 步驟 1 @fullscreen
@@ -467,7 +468,7 @@ controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 ```
 
-## 步驟 15 @fullscreen
+## 步驟 16 @fullscreen
 
 在 ``||music: Music||`` 選單中拖拉 ``||music: play sound ba ding ||`` 到 ``||controller: on any button pressed||`` 內的最下方。點擊 ``||music: ba ding ▼||``
 揀選 ``||music: magic wand||``。
@@ -483,7 +484,7 @@ controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
 ```
 
 
-## 步驟 15 @fullscreen
+## 步驟 17 @fullscreen
 
 點擊 ``||sprites: set mySprite x to 0||`` 中的 ``||sprites:x ▼||`` ，揀選 ``||sprites:vy (velocity y)||`` ，並將數值改為 `-100`。 `velocity` 解作速度，負值代表向上，意思將小鴨的速度改成向上100。
 
@@ -495,12 +496,12 @@ controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 ```
 
-## 步驟 16
+## 步驟 18
 
 完成後，請到左方版面進行測試。雙擊左方模擬器，開始遊戲後，試試按空白鍵，看看小鴨會否飛。
 
 
-## 步驟 17 @fullscreen
+## 步驟 19 @fullscreen
 
 ``||game:Game||`` 選單中，拖拉  ``||game:on game update every 500 ms||`` 到主版面，將數值改為 `1500`。
 
@@ -509,7 +510,7 @@ game.onUpdateInterval(1500, function () {
 })
 ```
 
-## 步驟 18 @fullscreen
+## 步驟 20 @fullscreen
 
 在 ``||info:Info||`` 選單中拖拉 ``||info:change score by 1 ||`` 到 ``||game:on game update every 1500 ms||`` 方塊之內。
 
@@ -520,7 +521,7 @@ game.onUpdateInterval(1500, function () {
 })
 ```
 
-## 步驟 19 @fullscreen
+## 步驟 21 @fullscreen
 在 ``||variables:Variables||`` 選單中，點擊 `Make a variable`，建立 ``||variables:logType||`` `variable`。在 ``||variables:Variables||`` 拖拉 ``||variables: set logtype to 0 ||`` 到 ``||game:on game update every 1500 ms||`` 內的最下方。
 
 ```blocks
@@ -531,7 +532,7 @@ game.onUpdateInterval(1500, function () {
 })
 ```
 
-## 步驟 20 @fullscreen
+## 步驟 22 @fullscreen
 在 ``||math:Math||`` 選單中，拖拉 ``||math:pick random 0 to 10||`` 到 ``||variables: set logType to 0 ||`` 的 ``||variables:0 ||`` 上。並將數值由 ``||math:0 to 10||`` 改為 ``||math:0 to 3||``。 
 
 ```blocks
@@ -542,7 +543,7 @@ game.onUpdateInterval(1500, function () {
 })
 ```
 
-## 步驟 21 @fullscreen
+## 步驟 23 @fullscreen
 在 ``||sprites:Sprites||`` 選單中，拖拉 ``||variables:set projectile to ...  from side with ...||`` 到 ``||game:on game update every 1500 ms||`` 內。
 
 ```blocks
@@ -571,7 +572,7 @@ game.onUpdateInterval(1500, function () {
 })
 ```
 
-## 步驟 22 @fullscreen
+## 步驟 24 @fullscreen
 
 在 ``||arrays:Arrays||`` 選單中，拖拉 ``||arrays: list ▼ get value at 0 ||`` 到 `projectile` 及 `from side with vx ..` 之間的灰色圖案上。 
 
@@ -585,7 +586,7 @@ game.onUpdateInterval(1500, function () {
 })
 ```
 
-## 步驟 22 @fullscreen
+## 步驟 25 @fullscreen
 點擊 ``||variables:list ▼||``，揀選 ``||variables:topLogImages||``。在 ``||variables:Variables||`` 選單中，拖拉 ``||variables: logType||`` 到 ``||arrays: list ▼ get value at 0 ||`` 的 ``||arrays:0||`` 之上。然後分別將 ``||sprites:vx||`` 及 ``||sprites:vy||`` 的值改為 `-45` 及 `0` 
 
 ```blocks
@@ -597,7 +598,7 @@ game.onUpdateInterval(1500, function () {
 })
 ```
 
-## 步驟 23 @fullscreen
+## 步驟 26 @fullscreen
 
 
 在 ``||sprites: Sprites||`` 選單中拖拉 ``||sprites: set mySprite x to 0||`` 到 ``||game:on game update every 1500 ms||`` 內的最下方。點擊 ``||variables:mySprite ▼||`` ，揀選 ``||variables:projectile||``。點擊 ``||sprites:x ▼||`` ，揀選 ``||sprites: top||`` ，數值不變，維持 `0`
@@ -613,7 +614,7 @@ game.onUpdateInterval(1500, function () {
 ```
 
 
-## 步驟 24 @fullscreen
+## 步驟 27 @fullscreen
 
 複製 ``||variables:set projectile to projectile topLogImages get ...||`` 方塊並將之加到 ``||game:on game update every 1500 ms||``  內的最下方。點擊 ``||variables:topLogImages ▼||`` ，揀選 ``||variables:bottomLogImages||``
 
@@ -627,7 +628,7 @@ game.onUpdateInterval(1500, function () {
     let projectile = sprites.createProjectileFromSide(bottomLogImages[logType], -40, 0)
 })
 ```
-## 步驟 25 @fullscreen
+## 步驟 28 @fullscreen
 
 複製 ``||sprites:set projectile top to 0||`` 方塊，並將之加到 ``||game:on game update every 1500 ms||`` 內的最下方。點擊 ``||sprites:top ▼||``，揀選 ``||sprites:bottom||`` 。在 ``||scene:Scene||`` 中拖拉 ``||scene:screen height||`` 到 ``||sprites:set projectile bottom to 0||`` 中的 ``||sprites:0||`` 上。
 
@@ -647,7 +648,7 @@ game.onUpdateInterval(1500, function () {
 
 完成後，請到左方模擬器測試結果。小鴨應該除了能飛以外，上下兩方應該有樹由右之左飛出來。
 
-## 步驟 26 @fullscreen
+## 步驟 29 @fullscreen
 
 在 ``||game: Game||`` 選單中，拖拉 ``||game: on game update||`` 到主版上。
 
@@ -657,7 +658,7 @@ game.onUpdate(function () {
 })
 ```
 
-## 步驟 27 @fullscreen
+## 步驟 30 @fullscreen
 
 在 ``||logic: Logic||`` 選單中，拖拉 ``||logic:if true then||`` 到 ``||game: on game update||`` 中，並在 ``||game:Game||`` 中拖拉 ``||game:game over LOSE||`` 方塊到 ``||logic:if true then||`` 內。 
 
@@ -670,7 +671,7 @@ game.onUpdate(function () {
 })
 ```
 
-## 步驟 0 @fullscreen
+## 步驟 31 @fullscreen
 
 在 ``||logic: Logic||`` 選單中，拖拉 ``||logic: <> or <> ||`` 到 ``||logic:if true then||`` 的 ``||logic:true||`` 上。
 
@@ -683,7 +684,7 @@ game.onUpdate(function () {
     }
 })
 ```
-## 步驟 28 @fullscreen
+## 步驟 32 @fullscreen
 
 在 ``||logic: Logic||`` 選單中，拖拉 ``||logic: 0 < 0 ||`` 到 ``||logic: <> or <> ||`` 中的前後兩個**條件**上。
 
@@ -697,7 +698,7 @@ game.onUpdate(function () {
 })
 ```
 
-## 步驟 29 @fullscreen
+## 步驟 33 @fullscreen
 
 在第二個條件中，點擊將在方塊 ``||logic: 0 < 0 ||`` 中的 ``||logic:< ▼||`` ，揀選 ``||logic:> ||``
 
@@ -711,7 +712,7 @@ game.onUpdate(function () {
 })
 ```
 
-## 步驟 30 @fullscreen
+## 步驟 34 @fullscreen
 
 在 ``||sprites: Sprites||`` 選單中，拖拉 ``||sprites: mySprite x ||`` 到第一個條件上的第一個 ``||logic:0||``。點擊 ``||sprites: x ▼||`` ，並揀選 ``||sprites: top ||``。
 
@@ -725,7 +726,7 @@ game.onUpdate(function () {
 })
 ```
 
-## 步驟 31 @fullscreen
+## 步驟 35 @fullscreen
 
 在 ``||sprites: Sprites||`` 選單中，拖拉 ``||sprites: mySprite x ||`` 到第二個條件上的第一個 ``||logic:0||``。點擊 ``||sprites: x ▼||`` ，並揀選 ``||sprites: bottom ||``。在 ``||scene: Scene||`` 中拖拉 ``||scene: screen height ||`` 到第二個條件上的第二個 ``||logic:0||`` 上。
 
@@ -739,7 +740,7 @@ game.onUpdate(function () {
 })
 ```
 
-## 步驟 32 @fullscreen
+## 步驟 36 @fullscreen
 
 在 ``||sprites:Sprite||`` 選單中，拖拉 ``||sprites:on sprite of kind player overlaps ...||`` 到主版中。點擊方塊中**最後**的一個 ``||sprites: Player ▼||``，揀選 ``||sprites: Projectile||``。最後將 ``||game: game over LOSE||`` 拖到這個方塊之內。
 
