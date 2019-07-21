@@ -4,7 +4,7 @@
 
 Try this tutorial!
 
-### ~
+### ~`
 
 ## 簡介 @unplugged
 
@@ -317,7 +317,7 @@ let topLogImages = [
 
 ## 步驟 11 @fullscreen
 
-在 ``||varaiables:set topLogImages to array of ...||`` 上點擊右鍵按 `Duplicate` 複製方塊，並將方塊放到 ``||loops: on start||`` 內的最下方。
+在 ``||varaiables:set topLogImages to array of ...||`` 方塊上點擊右鍵按 `Duplicate` 複製方塊，並將方塊放到 ``||loops: on start||`` 內的最下方。
 
 ```blocks
 let mySprite = sprites.create(img`
@@ -357,7 +357,7 @@ let topLogImages = [
 ]
 ```
 ## 步驟 12 @fullscreen
-在剛複製出來的方塊上，點擊方塊上的 ``||variables:topLogImages ▼||``，揀選 `Rename variable ...` 將 ``||variables:topLogImages||`` 改名為 ``||variables:bottomLogImages||``
+在剛複製出來的方塊上，點擊方塊上的 ``||variables:topLogImages ▼||``，揀選 `New variable ...` ，命名為 ``||variables:bottomLogImages||``
 
 ```blocks
 let mySprite = sprites.create(img`
@@ -455,7 +455,37 @@ controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
 
 ## 步驟 15 @fullscreen
 
-點擊 ``||sprites: set mySprite x to 0||`` 中的 ``||sprites:x ▼||`` ，揀選 ``||sprites:vy (velocity y)||`` ，並將數值改為 `-100`。 **velocity** 解作速度，負值代表向上，意思將小鴨的速度改成向上100。
+在 ``||sprites: Sprites||`` 選單中拖拉 ``||sprites: mySprite ▼ start spray ▼ effect ||`` 到 ``||controller: on any button pressed||`` 內的最下方。點擊 ``||sprites: spray ▼||``
+揀選 ``||sprites: halo||``。
+
+```blocks
+let mySprite: Sprite = null
+controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
+    mySprite.x = 0
+    // @highlight
+     mySprite.startEffect(effects.halo)
+})
+```
+
+## 步驟 15 @fullscreen
+
+在 ``||music: Music||`` 選單中拖拉 ``||music: play sound ba ding ||`` 到 ``||controller: on any button pressed||`` 內的最下方。點擊 ``||music: ba ding ▼||``
+揀選 ``||music: magic wand||``。
+
+```blocks
+let mySprite: Sprite = null
+controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
+    mySprite.x = 0
+    mySprite.startEffect(effects.halo)
+    // @highlight
+    music.magicWand.play()
+})
+```
+
+
+## 步驟 15 @fullscreen
+
+點擊 ``||sprites: set mySprite x to 0||`` 中的 ``||sprites:x ▼||`` ，揀選 ``||sprites:vy (velocity y)||`` ，並將數值改為 `-100`。 `velocity` 解作速度，負值代表向上，意思將小鴨的速度改成向上100。
 
 ```blocks
 let mySprite: Sprite = null
@@ -556,7 +586,7 @@ game.onUpdateInterval(1500, function () {
 ```
 
 ## 步驟 22 @fullscreen
-點擊 ``||variables:list ▼||``，揀選 ``||variables:topLogImages||``。然後分別將 ``||sprites:vx||`` 及 ``||sprites:vy||`` 的值改為 `-45` 及 `0` 
+點擊 ``||variables:list ▼||``，揀選 ``||variables:topLogImages||``。在 ``||variables:Variables||`` 選單中，拖拉 ``||variables: logType||`` 到 ``||arrays: list ▼ get value at 0 ||`` 的 ``||arrays:0||`` 之上。然後分別將 ``||sprites:vx||`` 及 ``||sprites:vy||`` 的值改為 `-45` 及 `0` 
 
 ```blocks
 game.onUpdateInterval(1500, function () {
@@ -615,7 +645,7 @@ game.onUpdateInterval(1500, function () {
 
 ## 進行測試
 
-完成後，請到左方模擬器測試結果
+完成後，請到左方模擬器測試結果。小鴨應該除了能飛以外，上下兩方應該有樹由右之左飛出來。
 
 ## 步驟 26 @fullscreen
 
@@ -669,7 +699,7 @@ game.onUpdate(function () {
 
 ## 步驟 29 @fullscreen
 
-在第二個條件中，將在方塊 ``||logic: 0 < 0 ||`` 中的 ``||logic:< ||`` 改為 ``||logic:> ||``
+在第二個條件中，點擊將在方塊 ``||logic: 0 < 0 ||`` 中的 ``||logic:< ▼||`` ，揀選 ``||logic:> ||``
 
 ```blocks
 game.onUpdate(function () {
