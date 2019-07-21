@@ -1,7 +1,7 @@
 {
     "name": "Flappy Duck Tutorial",
     "meta": {},
-    "editor": "tsprj",
+    "editor": "blocksprj",
     "pubId": "",
     "pubCurrent": false,
     "target": "arcade",

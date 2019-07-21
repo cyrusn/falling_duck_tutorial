@@ -1,12 +1,13 @@
+
+controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
+  mySprite.vy = -100
+})
 function moveLogImage() {
   projectile = sprites.createProjectileFromSide(topLogImage, -45, 0)
   projectile.top = 0
   projectile = sprites.createProjectileFromSide(bottomLogImage, -45, 0)
   projectile.bottom = scene.screenHeight()
 }
-controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
-  mySprite.vy = -100
-})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
   game.over(false)
 })
@@ -396,14 +397,11 @@ mySprite = sprites.create(img`
   . . . c c c c c c c c b b . . .
 `, SpriteKind.Player)
 mySprite.ay = 300
-game.onUpdateInterval(1500, function () {
-  info.changeScoreBy(1)
-})
 game.onUpdate(function () {
-  if (mySprite.vy > 0) {
-    animation.setAction(mySprite, ActionKind.Idle)
-  }
-  if (mySprite.bottom > 120 || mySprite.top < 0) {
+  if (mySprite.bottom > screen.screenHeight || mySprite.top < 0) {
     game.over(false)
   }
+})
+game.onUpdateInterval(1500, function () {
+  info.changeScoreBy(1)
 })
