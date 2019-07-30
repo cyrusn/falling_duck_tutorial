@@ -12,12 +12,5 @@
     "path": "flappy-duck-tutorial",
     "blobCurrent": false,
     "saveId": null,
-    "githubCurrent": false,
-    "tutorial": {
-        "tutorial": "/tutorial.md",
-        "tutorialName": "Falling Duck Tutorial",
-        "tutorialStep": 1,
-        "tutorialReady": true,
-        "tutorialHintCounter": 0
-    }
+    "githubCurrent": false
 }
