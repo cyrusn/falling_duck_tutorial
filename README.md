@@ -1,6 +1,6 @@
 # Flappy Duck Tutorial
 
-### ~button https://arcade.makecode.com/#tutorial:https://github.com/cyrusn/flappy_duck_tutorial
+### ~button https://arcade.makecode.com/#tutorial:https://github.com/skhlpss/flappy_duck_tutorial
 
 Try this tutorial!
 
