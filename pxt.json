@@ -9,5 +9,9 @@
         "main.ts",
         "README.md"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj",
+    "targetVersions": {
+        "target": "0.16.2",
+        "pxt": "5.31.8"
+    }
 }
