@@ -1,0 +1,17 @@
+{
+    "name": "flappy_duck_tutorial",
+    "dependencies": {
+        "device": "*"
+    },
+    "description": "",
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "preferredEditor": "tsprj",
+    "targetVersions": {
+        "target": "0.16.2",
+        "pxt": "5.31.8"
+    }
+}
