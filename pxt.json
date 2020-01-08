@@ -1,5 +1,5 @@
 {
-    "name": "Flappy Duck Tutorial",
+    "name": "flappy_duck_tutorial",
     "dependencies": {
         "device": "*"
     },
