@@ -8,7 +8,7 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "docs/tutorials/flappy_duck_tutorial.md"
+        "flappy_duck_tutorial.md"
     ],
     "preferredEditor": "blocksprj"
 }
