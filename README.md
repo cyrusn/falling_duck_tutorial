@@ -8,11 +8,13 @@ Try this tutorial!
 
 ## 簡介 @unplugged
 
+![school logo](https://liping.edu.hk/download/Resource/BGImage/201710261432147745579.png)
+
 歡迎來到聖公會李炳中學的電腦教室
 
 今日會學懂如何編寫一個 Flappy Duck 遊戲，希望當中能讓你學懂簡單的編程概念。
 
-![school logo](https://liping.edu.hk/download/Resource/BGImage/201710261432147745579.png)
+
 ![duck](https://arcade.makecode.com/static/blocks-games.gif)
 
 ## 步驟 1 @fullscreen
