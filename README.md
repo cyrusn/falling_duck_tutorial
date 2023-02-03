@@ -8,7 +8,7 @@ Try this tutorial!
 
 ## 簡介 @unplugged
 
-![school logo](https://liping.edu.hk/download/Resource/BGImage/201710261432147745579.png)
+![school logo](https://eclass.liping.edu.hk/~sas/school_logo.png)
 
 歡迎來到聖公會李炳中學的電腦教室
 
